@@ -101,7 +101,7 @@ const HorizontalScrollCarousel = ({
     [
       direction === "right" ? motionRange.end : motionRange.start,
       direction === "right" ? motionRange.start : motionRange.end,
-    ]
+    ],
   );
 
   return (
@@ -125,7 +125,7 @@ const Card = ({ card }: { card: CardType }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden bg-neutral-200"
+      className="group relative h-112.5 w-112.5 overflow-hidden bg-neutral-200"
       // className={`group relative h-[${CARD_WIDTH}px] w-[${CARD_WIDTH}px] overflow-hidden bg-neutral-200`}
     >
       <div
@@ -137,7 +137,7 @@ const Card = ({ card }: { card: CardType }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+        <p className="bg-linear-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
           {card.title}
         </p>
       </div>

@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, JSX, useContext, useEffect, useState } from "react";
 
 const IsClientCtx = createContext(false);
 
